@@ -8,6 +8,8 @@ This archive provides all code needed to replicate the calibrated simulations in
 
 ## Code-files
 
+To execute all our code sequentially, source **master.R**. 
+This file also has a (commented) line installing the required **R** packages.
 
 ### Generic
 
@@ -24,7 +26,7 @@ The following two files contain code that might be useful for others who wish to
 The following three scripts contain code that is specific to our empirical application and the calibrated simulations based on it. To replicate our results, execute these three scripts sequentially:
 
 1. **dataprep.R**: This script reads *HIAS_Anonymous_with_Emp.csv* in the folder *Data_raw/*, and produces three processed data files in *Data_processed/*, *HIAS_Anonymous_Prepared.csv*, *affiliate_capacities.csv*, and *theta_calibrated.csv*.
-1. **simulation.R**: This script runs the main simulations, using the processed data files, and stores the output in *Simulation_output/*, with one file for each simulation iteration. Despite using parallel processing, running this script takes considerable time (several hours on our laptop, a Macbook Pro with 8 CPUs).
+1. **simulation.R**: This script runs the main simulations, using the processed data files, and stores the output in *Simulation_output/*, with one file for each simulation iteration. Despite using parallel processing, running this script takes considerable time (about 6 hours on our laptop, a Macbook Pro with 8 CPUs).
 1. **summarize_simulations.R**: This file reads the simulation output, and produces the figures shown in the paper, storing them in the folder *Figures/*.
 
 

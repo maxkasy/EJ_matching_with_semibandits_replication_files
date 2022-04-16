@@ -68,8 +68,6 @@ welfare_trajectory = function(filename) {
 summaries = map(csv_list, welfare_trajectory) %>%
     bind_rows()
 
-bind_rows()
-
 
 summaries %>%
     group_by(Year) %>%
