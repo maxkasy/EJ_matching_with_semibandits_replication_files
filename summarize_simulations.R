@@ -56,7 +56,7 @@ welfare_trajectory = function(filename) {
         group_by(Year) %>%
         summarize(
             n = n(),
-            Mean_employment = mean(y),
+            Mean_employment = mean(Employed),
             Mean_simulated_employment = mean(Simulated_Y),
             Mean_theta = mean(theta),
             Mean_simulated_theta = mean(Simulated_theta),
